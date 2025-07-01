@@ -20,9 +20,9 @@ platform :ios do
   lane :beta do
     # Set build number langsung di Info.plist (tanpa agvtool)
     set_info_plist_value(
-      path: "Match_Matrix/Info.plist",
+      path: "Match-Matrix-Info.plist",
       key: "CFBundleVersion",
-      value: Time.now.strftime("%Y%m%d%H%M") # Contoh: 202507012154
+      value: Time.now.strftime("%Y%m%d%H%M")
     )
 
     upload_to_testflight(

@@ -10,9 +10,9 @@ pipeline {
     }
 
     environment {
-        PROJECT_NAME = "Match Matrix"
+        PROJECT_NAME = "Match_Matrix"
         SCHEME_NAME = "Match Matrix"
-        PROJECT_FILE = "Match Matrix.xcodeproj"
+        PROJECT_FILE = "Match_Matrix.xcodeproj"
         EXPORT_OPTIONS_PLIST = "ExportOptions.plist"
     }
 

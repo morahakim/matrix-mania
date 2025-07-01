@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "46FB82A029DBFBED00EF4571"
-               BuildableName = "Match Matrix.app"
-               BlueprintName = "Match Matrix"
-               ReferencedContainer = "container:Match Matrix.xcodeproj">
+               BuildableName = "Match_Matrix.app"
+               BlueprintName = "Match_Matrix"
+               ReferencedContainer = "container:Match_Matrix.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46FB82A029DBFBED00EF4571"
-            BuildableName = "Match Matrix.app"
-            BlueprintName = "Match Matrix"
-            ReferencedContainer = "container:Match Matrix.xcodeproj">
+            BuildableName = "Match_Matrix.app"
+            BlueprintName = "Match_Matrix"
+            ReferencedContainer = "container:Match_Matrix.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46FB82A029DBFBED00EF4571"
-            BuildableName = "Match Matrix.app"
-            BlueprintName = "Match Matrix"
-            ReferencedContainer = "container:Match Matrix.xcodeproj">
+            BuildableName = "Match_Matrix.app"
+            BlueprintName = "Match_Matrix"
+            ReferencedContainer = "container:Match_Matrix.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

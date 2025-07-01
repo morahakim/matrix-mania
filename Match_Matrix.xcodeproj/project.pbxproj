@@ -64,7 +64,7 @@
 		465D459F2A2F7A31008C508B /* Match MatrixDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Match MatrixDebug.entitlements"; sourceTree = "<group>"; };
 		467FAAA529EED8BF00D94492 /* countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = countdown.mp3; sourceTree = "<group>"; };
 		467FAAA729EED92800D94492 /* TutorialScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialScreen.swift; sourceTree = "<group>"; };
-		46FB82A129DBFBED00EF4571 /* Match Matrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Match Matrix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FB82A129DBFBED00EF4571 /* Match_Matrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Match_Matrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FB82A429DBFBED00EF4571 /* Match_MatrixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match_MatrixApp.swift; sourceTree = "<group>"; };
 		46FB82A629DBFBED00EF4571 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		46FB82A829DBFBEE00EF4571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 		46FB82A229DBFBED00EF4571 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46FB82A129DBFBED00EF4571 /* Match Matrix.app */,
+				46FB82A129DBFBED00EF4571 /* Match_Matrix.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,9 +221,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		46FB82A029DBFBED00EF4571 /* Match Matrix */ = {
+		46FB82A029DBFBED00EF4571 /* Match_Matrix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46FB82AF29DBFBEE00EF4571 /* Build configuration list for PBXNativeTarget "Match Matrix" */;
+			buildConfigurationList = 46FB82AF29DBFBEE00EF4571 /* Build configuration list for PBXNativeTarget "Match_Matrix" */;
 			buildPhases = (
 				46FB829D29DBFBED00EF4571 /* Sources */,
 				46FB829E29DBFBED00EF4571 /* Frameworks */,
@@ -233,9 +233,9 @@
 			);
 			dependencies = (
 			);
-			name = "Match Matrix";
+			name = Match_Matrix;
 			productName = "Match Matrix";
-			productReference = 46FB82A129DBFBED00EF4571 /* Match Matrix.app */;
+			productReference = 46FB82A129DBFBED00EF4571 /* Match_Matrix.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -253,7 +253,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 46FB829C29DBFBED00EF4571 /* Build configuration list for PBXProject "Match Matrix" */;
+			buildConfigurationList = 46FB829C29DBFBED00EF4571 /* Build configuration list for PBXProject "Match_Matrix" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -266,7 +266,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				46FB82A029DBFBED00EF4571 /* Match Matrix */,
+				46FB82A029DBFBED00EF4571 /* Match_Matrix */,
 			);
 		};
 /* End PBXProject section */
@@ -508,7 +508,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46FB829C29DBFBED00EF4571 /* Build configuration list for PBXProject "Match Matrix" */ = {
+		46FB829C29DBFBED00EF4571 /* Build configuration list for PBXProject "Match_Matrix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46FB82AD29DBFBEE00EF4571 /* Debug */,
@@ -517,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46FB82AF29DBFBEE00EF4571 /* Build configuration list for PBXNativeTarget "Match Matrix" */ = {
+		46FB82AF29DBFBEE00EF4571 /* Build configuration list for PBXNativeTarget "Match_Matrix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46FB82B029DBFBEE00EF4571 /* Debug */,

@@ -444,7 +444,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Match Matrix/Match MatrixDebug.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Match Matrix/Preview Content\"";
 				DEVELOPMENT_TEAM = 365WJYN4LU;
 				ENABLE_PREVIEWS = YES;
@@ -467,6 +467,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -479,7 +480,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Match Matrix/Match Matrix.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Match Matrix/Preview Content\"";
 				DEVELOPMENT_TEAM = 365WJYN4LU;
 				ENABLE_PREVIEWS = YES;
@@ -502,6 +503,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

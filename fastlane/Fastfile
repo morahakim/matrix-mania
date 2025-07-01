@@ -18,10 +18,11 @@ default_platform(:ios)
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
-    # Ganti update_build_number dengan increment_build_number + custom number
-    increment_build_number(
-      xcodeproj: "Match_Matrix.xcodeproj",
-      build_number: Time.now.strftime("%Y%m%d%H%M") # Contoh: 202507012146
+    # Set build number langsung di Info.plist (tanpa agvtool)
+    set_info_plist_value(
+      path: "Match_Matrix/Info.plist",
+      key: "CFBundleVersion",
+      value: Time.now.strftime("%Y%m%d%H%M") # Contoh: 202507012154
     )
 
     upload_to_testflight(

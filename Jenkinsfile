@@ -1,6 +1,14 @@
 pipeline {
     agent any
 
+    parameters {
+        choice(
+            name: 'BRANCH_NAME',
+            choices: ['dev', 'main', 'test'],
+            description: 'Select the Git branch to build'
+        )
+    }
+
     environment {
         PROJECT_NAME = "Match Matrix"
         SCHEME_NAME = "Match Matrix"
@@ -11,9 +19,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'tesJenkins',
+                git branch: "${params.BRANCH_NAME}",
                     credentialsId: 'git-clima-credential',
-                    url: 'git@github.com:rivalku21/matrix-mania.git'
+                    url: 'git@github.com:morahakim/matrix-mania.git'
             }
         }
 

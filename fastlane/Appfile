@@ -1,0 +1,8 @@
+app_identifier("com.appledeveloperacademy.www.Match-Matrix") # The bundle identifier of your app
+apple_id("rival.fauzi.id@gmail.com") # Your Apple Developer Portal username
+
+itc_team_id("126290275") # App Store Connect Team ID
+team_id("365WJYN4LU") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

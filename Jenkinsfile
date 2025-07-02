@@ -14,7 +14,6 @@ pipeline {
         SCHEME_NAME = "Match Matrix"
         PROJECT_FILE = "Match_Matrix.xcodeproj"
         EXPORT_OPTIONS_PLIST = "ExportOptions.plist"
-        IPA_OUTPUT_PATH = "build/IPA/Match_Matrix.ipa"
     }
 
     stages {
@@ -29,6 +28,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh '''
+                set -e
                 if [ -f "Podfile" ]; then
                     pod install
                 fi
@@ -47,7 +47,8 @@ pipeline {
                     -project "$PROJECT_FILE" \
                     -scheme "$SCHEME_NAME" \
                     -archivePath "build/Match Matrix.xcarchive" \
-                    -destination 'generic/platform=iOS'
+                    -destination 'generic/platform=iOS' \
+                    -allowProvisioningUpdates
 
                 xcodebuild -exportArchive \
                     -archivePath "build/Match Matrix.xcarchive" \
@@ -68,29 +69,31 @@ pipeline {
         }
 
         stage('Upload to TestFlight') {
-            steps {
-                timeout(time: 20, unit: 'MINUTES') {
-                    withCredentials([
-                        file(credentialsId: 'APPSTORE_API_KEY', variable: 'API_KEY_FILE'),
-                        string(credentialsId: 'APP_STORE_API_KEY', variable: 'APP_STORE_KEY_ID'),
-                        string(credentialsId: 'APP_STORE_API_ISSUER_ID', variable: 'APP_STORE_ISSUER_ID')
-                    ]) {
-                        sh """
-                        export PATH="\$HOME/.fastlane/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-                        export LANG=en_US.UTF-8
-                        export LC_ALL=en_US.UTF-8
+    steps {
+        withCredentials([
+            file(credentialsId: 'APPSTORE_API_KEY', variable: 'API_KEY_FILE'),
+            string(credentialsId: 'APP_STORE_API_KEY', variable: 'APP_STORE_KEY_ID'),
+            string(credentialsId: 'APP_STORE_API_ISSUER_ID', variable: 'APP_STORE_ISSUER_ID')
+        ]) {
+            sh '''
+            export LANG=en_US.UTF-8
+            export LC_ALL=en_US.UTF-8
+            export PATH="$HOME/.fastlane/bin:/opt/homebrew/bin:$PATH"
 
-                        export IPA_OUTPUT_PATH="$IPA_OUTPUT_PATH"
-                        export APP_STORE_KEY_ID="$APP_STORE_KEY_ID"
-                        export APP_STORE_ISSUER_ID="$APP_STORE_ISSUER_ID"
-                        export API_KEY_FILE="$API_KEY_FILE"
+            fastlane beta \
+            key_id:$APP_STORE_KEY_ID \
+            issuer_id:$APP_STORE_ISSUER_ID \
+            key_filepath:$API_KEY_FILE
+            '''
+        }
+    }
+}
 
-                        echo "🚀 Running fastlane..."
-                        fastlane beta
-                        """
-                    }
-                }
-            }
+    }
+
+    post {
+        always {
+            cleanWs()
         }
     }
 }

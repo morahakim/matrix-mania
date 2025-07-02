@@ -2,7 +2,7 @@
 <plist version="1.0">
 <dict>
     <key>method</key>
-    <string>development</string> <!-- Ganti ke 'development' jika hanya testing di device -->
+    <string>app-store-connect</string> <!-- Ganti ke 'development' jika hanya testing di device -->
     <key>signingStyle</key>
     <string>manual</string>
     <key>teamID</key>

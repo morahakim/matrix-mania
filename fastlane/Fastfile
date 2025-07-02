@@ -18,7 +18,7 @@ default_platform(:ios)
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
-    # Set build number langsung di Info.plist (tanpa agvtool)
+    # Set build number langsung di Info.plist
     set_info_plist_value(
       path: "Match-Matrix-Info.plist",
       key: "CFBundleVersion",
@@ -26,7 +26,7 @@ platform :ios do
     )
 
     upload_to_testflight(
-      ipa: ENV["IPA_OUTPUT_PATH"],
+      ipa: "build/IPA/Match_Matrix.ipa",
       skip_waiting_for_build_processing: true,
       api_key: app_store_connect_api_key(
         key_id: ENV["APP_STORE_KEY_ID"],

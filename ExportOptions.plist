@@ -2,20 +2,26 @@
 <plist version="1.0">
 <dict>
     <key>method</key>
-    <string>app-store-connect</string> <!-- Ganti ke 'development' jika hanya testing di device -->
+    <string>app-store</string>
+    
     <key>signingStyle</key>
     <string>manual</string>
+
     <key>teamID</key>
-    <string>SZ63C65QXD</string>
+    <string>365WJYN4LU</string> <!-- Ini team ID dari Rival Fauzi -->
+
     <key>provisioningProfiles</key>
     <dict>
         <key>com.appledeveloperacademy.www.Match-Matrix</key>
-        <string>e8ea49a0-82ff-41ea-b23b-7f72139c9ca4</string> <!-- UUID dari provisioning profile -->
+        <string>Mora</string> <!-- Harus sesuai "Name" di profile, bukan UUID atau filename -->
     </dict>
+
     <key>signingCertificate</key>
-    <string>Apple Development: Rival Fauzi (SZ63C65QXD)</string> <!-- Sesuai cert -->
+    <string>Apple Distribution</string>
+
     <key>compileBitcode</key>
     <false/>
+
     <key>stripSwiftSymbols</key>
     <true/>
 </dict>

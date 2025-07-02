@@ -76,7 +76,7 @@ struct HomeView: View {
                     Image("Icon")
                         .resizable()
                         .frame(width: geometry.size.width * 0.5, height: geometry.size.width * 0.5)
-                    Text("Matrix Mania")
+                    Text("Matrix MANTAP")
                         .foregroundColor(.black)
                         .fontWeight(.bold)
                         .font(.system(size: geometry.size.width * 0.06))

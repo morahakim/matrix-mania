@@ -7,9 +7,7 @@
 	<key>com.apple.developer.game-center</key>
 	<true/>
 	<key>com.apple.developer.icloud-container-identifiers</key>
-	<array>
-		<string>iCloud.com.appledeveloperacademy.www.Match-Matrix</string>
-	</array>
+	<array/>
 	<key>com.apple.developer.icloud-services</key>
 	<array>
 		<string>CloudKit</string>

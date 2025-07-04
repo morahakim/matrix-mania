@@ -71,6 +71,9 @@
 		46FB82AB29DBFBEE00EF4571 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46FB82B229DC201700EF4571 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		46FD09B429FBB22A00BC567A /* MatrixData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MatrixData.xcdatamodel; sourceTree = "<group>"; };
+		749212EA2E17C51500DBE34E /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
+		749212EB2E17C52C00DBE34E /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		749212EC2E17C54100DBE34E /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,9 @@
 		46FB829829DBFBED00EF4571 = {
 			isa = PBXGroup;
 			children = (
+				749212EA2E17C51500DBE34E /* Dev.xcconfig */,
+				749212EB2E17C52C00DBE34E /* Staging.xcconfig */,
+				749212EC2E17C54100DBE34E /* Prod.xcconfig */,
 				46FB82A329DBFBED00EF4571 /* Match Matrix */,
 				46FB82A229DBFBED00EF4571 /* Products */,
 			);
@@ -521,6 +527,7 @@
 		};
 		746591752E152F1A00BC3F97 /* Dev */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749212EA2E17C51500DBE34E /* Dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -593,7 +600,7 @@
 				DEVELOPMENT_TEAM = 365WJYN4LU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Info-Dev.plist";
+				INFOPLIST_FILE = "Match-Matrix-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -623,6 +630,7 @@
 		};
 		746591772E152F3D00BC3F97 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749212EB2E17C52C00DBE34E /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -689,7 +697,7 @@
 				DEVELOPMENT_TEAM = 365WJYN4LU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Info-Staging.plist";
+				INFOPLIST_FILE = "Match-Matrix-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -719,6 +727,7 @@
 		};
 		746591792E152F4E00BC3F97 /* Production */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749212EC2E17C54100DBE34E /* Prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -785,7 +794,7 @@
 				DEVELOPMENT_TEAM = 365WJYN4LU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Info-Prod.plist";
+				INFOPLIST_FILE = "Match-Matrix-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

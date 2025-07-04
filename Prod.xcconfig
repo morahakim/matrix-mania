@@ -1,0 +1,11 @@
+//
+//  Prod.xcconfig
+//  Match_Matrix
+//
+//  Created by Mora on 04/07/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+PRODUCT_BUNDLE_IDENTIFIER = com.appledeveloperacademy.www.Match-Matrix
+APP_DISPLAY_NAME = MatchMatrix Prod

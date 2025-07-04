@@ -588,6 +588,7 @@
 		};
 		746591762E152F1A00BC3F97 /* Dev */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749212EA2E17C51500DBE34E /* Dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -685,6 +686,7 @@
 		};
 		746591782E152F3D00BC3F97 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749212EB2E17C52C00DBE34E /* Staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -782,6 +784,7 @@
 		};
 		7465917A2E152F4E00BC3F97 /* Production */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749212EC2E17C54100DBE34E /* Prod.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

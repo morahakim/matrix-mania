@@ -6,7 +6,7 @@
     <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
     
     <key>CFBundleName</key>
-    <string>Match Matrix</string>
+    <string>Match Matrix Dev</string>
 
     <key>Environment</key>
     <string>Dev</string> <!-- Staging / Prod sesuai -->

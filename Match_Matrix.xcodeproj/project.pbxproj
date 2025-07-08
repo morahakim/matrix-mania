@@ -331,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"APP_DISPLAY_NAME[arch=*]" = "Match Matrix Dev";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -444,6 +445,7 @@
 		46FB82B029DBFBEE00EF4571 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"APP_DISPLAY_NAME[arch=*]" = "Match Matrix Dev";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -456,7 +458,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Match-Matrix-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania Dev";
+				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -498,7 +500,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Match-Matrix-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania Dev";
+				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -602,7 +604,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Match-Matrix-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania Dev";
+				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -700,7 +702,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Match-Matrix-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania Dev";
+				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -798,7 +800,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Match-Matrix-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania Dev";
+				INFOPLIST_KEY_CFBundleDisplayName = "Matrix Mania";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
